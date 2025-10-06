@@ -2,7 +2,7 @@
   "name": "Dice Roll Game",
   "short_name": "Dice Game",
   "description": "A simple dice rolling game that works offline",
-  "start_url": "/",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#4CAF50",
