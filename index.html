@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4CAF50">
+    <meta name="description" content="A simple dice rolling game that works offline">
+    <title>Dice Roll Game</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="icons/icon-192x192.png">
+    <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎲 Dice Roll Game 🎲</h1>
+        </header>
+        
+        <main>
+            <div class="dice-container">
+                <div class="dice" id="dice">
+                    <div class="face">?</div>
+                </div>
+            </div>
+            
+            <button class="roll-button" id="rollButton">Roll the Dice!</button>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-label">Current Roll:</span>
+                    <span class="stat-value" id="currentRoll">-</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Total Rolls:</span>
+                    <span class="stat-value" id="totalRolls">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Highest Roll:</span>
+                    <span class="stat-value" id="highestRoll">-</span>
+                </div>
+            </div>
+            
+            <button class="reset-button" id="resetButton">Reset Stats</button>
+        </main>
+        
+        <footer>
+            <p class="install-prompt" id="installPrompt" style="display: none;">
+                📱 Install this app on your device!
+            </p>
+        </footer>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
